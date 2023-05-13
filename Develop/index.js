@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
-import  inquirer  from "inquirer";
+import  inquirer  from 'inquirer';
 import  fs  from 'fs';
 import chalk from 'chalk';
+import generateMarkdown from './utils/generateMarkdown.js';
 
 
 // TODO: Create an array of questions for user input
@@ -24,46 +25,54 @@ const questions = [
   {
     type: 'input',
     name: 'description',
-    message: 'What is the description for this project?',
+    message: chalk.blue('What is the description for this project?'),
   },
   {
     type: 'input',
     name: 'installation',
-    message: 'What are the installation instructions?',
+    message: chalk.blue('What are the installation instructions?'),
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'What is the information on usage?',
+    message: chalk.blue('What is the information on usage?'),
   },
   {
     type: 'input',
     name: 'contribution',
-    message: 'What are the contribution guidelnes?',
+    message: chalk.blue('What are the contribution guidelnes?'),
   },
   {
     type: 'input',
     name: 'test',
-    message: 'What are the test instructions?',
+    message: chalk.blue('What are the test instructions?'),
   },
-
+  {
+    type: 'list',
+    name: 'license',
+    message: chalk.blue('What is the license for your application?'),
+    choices: ['Apache License 2.0', 'MIT', 'BSD', 'None'],
+  }
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
-    fs.writeFile(fileName, htmlTL, (err) =>
-    err ? console.log(err) : console.log('Data logged! HTML file generated!')
+  
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.log(err) : console.log('Data logged! README.md file generated!')
   );
-
 
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    
+    .then((answer) => {
+      const {username, email, title, description, installation, 
+        usage, contribution, test, license} = answer;
+    writeToFile("./generatedREADME.md", generateMarkdown(answer));    
+    });
     
 }
 
