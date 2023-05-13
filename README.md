@@ -39,6 +39,10 @@ N/A
 
 6. https://pitt.libguides.com/openlicensing/MIT (information on MIT license)
 
+7. https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide (Help with creating a professional README.md file)
+
+8. https://choosealicense.com/licenses/ (Licenses)
+
 9. Instructor, TAs, and classmates.
 
 ## License
