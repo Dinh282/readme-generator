@@ -51,14 +51,13 @@ const questions = [
     type: 'list',
     name: 'license',
     message: chalk.blue('What is the license for your application?'),
-    choices: ['Apache License 2.0', 'MIT', 'BSD', 'None'],
+    choices: ['Apache 2.0', 'MIT', 'Mozilla Public License 2.0', 'None'],
   }
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  
     fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log('Data logged! README.md file generated!')
   );
@@ -69,7 +68,6 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((answer) => {
-      
     writeToFile("./generatedREADME.md", generateMarkdown(answer));    
     });
     
