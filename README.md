@@ -40,6 +40,7 @@ in the Develop folder.
 
 
 Video Demo of Application:
+
 https://github.com/Dinh282/readme-generator/assets/112836220/19d57322-a98d-48d1-b6c2-19e50134a134
 
 
