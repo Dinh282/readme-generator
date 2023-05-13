@@ -1,20 +1,22 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// this function returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
+ //ternary operator that checks of the license passed is equal to "None", if so return '', else return string for badge image. 
  return (license == "None") ? '': `![license](https://img.shields.io/badge/License-${license.split(' ').join("%20")}-yellowgreen)`;
 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//this function return the license link, it takes in the license name and an abriviated name used as a
+//path name for the link to an article about the license.
 function renderLicenseLink(license, abrvLicenseName) {
   return (license == "None") ? '': `[${license}](https://choosealicense.com/licenses/${abrvLicenseName}/)`; 
 
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//this function returns the license section of the generated README.md
+// if there is no license, return an empty string
 function renderLicenseSection(license) {
+  //we use switch case here since we are adding a short summary of each license to the section, and the content
+  //varies depending on which license was selected by user.
   switch (license) {
     case 'Apache 2.0':
       return `${license} - A permissive license whose main conditions require preservation 
@@ -40,10 +42,11 @@ function renderLicenseSection(license) {
 
 }
 
-// TODO: Create a function to generate markdown for README
+//this function generates the data for the markdown for README using the destructed object given by inquirer.
 function generateMarkdown({username, email, title, description, installation, 
     usage, contribution, test, license}) {
    
+//we inject the variables into our template as needed.      
 return `
 
 # ${title}
@@ -84,5 +87,6 @@ Also, checkout my other projects on [GitHub](https://github.com/${username})
 
 };
 
-// module.exports = generateMarkdown;
+//we use export default instead of module.exports = generateMarkdown to comply with ES 6(instead of Common JS)
+ //since we are using inquirer 9.2.2 instead of 8.2.4;
 export default generateMarkdown;

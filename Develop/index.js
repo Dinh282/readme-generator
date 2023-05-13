@@ -1,11 +1,12 @@
-// TODO: Include packages needed for this application
+//packages needed for this application. we using import from instead of require
+//to comply with ES 6 since our version of inquirer is later than 8.2.4
 import  inquirer  from 'inquirer';
 import  fs  from 'fs';
 import chalk from 'chalk';
 import generateMarkdown from './utils/generateMarkdown.js';
 
 
-// TODO: Create an array of questions for user input
+//array of questions for inquirer to get user input with
 const questions = [
   {
     type: 'input',
@@ -56,21 +57,25 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
+//this function takes on two arguments and writes a README file using fs. The first argument is the file name,
+//and the second is the data to be written to the file.
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
+    //ternary operator. if there is error, console.log the err, else console.log message letting user know
+    //that the data is logged and a README.md file was created.
     err ? console.log(err) : console.log('Data logged! README.md file generated!')
   );
 
 }
 
-// TODO: Create a function to initialize app
+//this function initializes app. calls inquirer to get data from user.
 function init() {
     inquirer.prompt(questions)
     .then((answer) => {
-    writeToFile("./generatedREADME.md", generateMarkdown(answer));    
+    //once inquirer is done prmpting user, we call on writeToFile function.  
+    writeToFile("./generatedREADME.md", generateMarkdown(answer));   
+     
     });
-    
 }
 
 // Function call to initialize app

@@ -43,11 +43,14 @@ N/A
 
 8. https://choosealicense.com/licenses/ (Licenses)
 
-9. Instructor, TAs, and classmates.
+9. https://www.educative.io/answers/how-to-use-the-inquirer-node-package (Help with understanding inquirer package)
+
+10. Instructor, TAs, and classmates.
 
 ## License
 
 Please refer to the LICENSE section in the repository.
+
 
 ---
 

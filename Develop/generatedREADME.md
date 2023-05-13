@@ -1,11 +1,11 @@
 
 
-# a
+# README File Generator
 
 ![license](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-yellowgreen)
 
 ## Description
-
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -16,10 +16,10 @@
 7. [Questions](#questions)    
 
 ## Installation
-aa
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
 ## Usage
-a
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
 ## License
 Mozilla Public License 2.0 - Permissions of this weak copyleft license are conditioned on making 
@@ -29,12 +29,12 @@ Mozilla Public License 2.0 - Permissions of this weak copyleft license are condi
       visit: [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 
 ## Contributing
-aa
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
 ## Tests
-a
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
 
 ## Questions
-Feel free to contact me at a for additional information.  
-Also, checkout my other projects on [GitHub](https://github.com/a)
+Feel free to contact me at nguyen_dinh282@yahoo.com for additional information.  
+Also, checkout my other projects on [GitHub](https://github.com/Dinh282)
 
