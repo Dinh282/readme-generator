@@ -81,7 +81,7 @@ ${test}
 
 ## Questions
 Feel free to contact me at ${email} for additional information.  
-Also, checkout my other projects on [GitHub](https://github.com/${username})
+Also, check out my other projects on [GitHub](https://github.com/${username})
 
 `;
 
