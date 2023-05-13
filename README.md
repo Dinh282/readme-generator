@@ -6,7 +6,7 @@
 This application allows you to generate a professional README.md file through the command line. By doing this project, I was able to practice working with Javascript, Node.js, and NPM packages for Node.js such as Inquirer. Practicing with these technologies helped me better understand how server-side applications are built in Javascript. Node.js is a JS runtime environment that uses the V8 engine from Google to run JavaScript code outside of the browser; this would allow application developments to take place on the server side.
 
 
-## Table of Contents (Optional)
+## Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Credits](#contributing)
