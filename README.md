@@ -78,7 +78,9 @@ https://github.com/Dinh282/readme-generator/assets/112836220/19d57322-a98d-48d1-
 
 9. https://www.educative.io/answers/how-to-use-the-inquirer-node-package (Help with understanding inquirer package)
 
-10. Instructor, TAs, and classmates.
+10. https://medium.com/huawei-developers/how-to-add-an-embedded-video-on-github-readme-file-450f83be157a#:~:text=Conclusion,Drop%20feature%20provided%20by%20Github (Help with adding video to readme.md)
+
+11. Instructor, TAs, and classmates.
 
 ## Questions
 Feel free to contact me at nguyen_dinh282@yahoo.com for additional information.  
